@@ -1,6 +1,18 @@
-# TODO: Write documentation for `Kong`
-module Kong
-  VERSION = "0.1.0"
+require "./kong/**"
 
-  # TODO: Put your code here
+module Kong
+  class_getter(configuration) { Kong::Configuration.new }
+  class_getter(client) { Kong::Client.new }
+
+  #
+  # Configuration for Kong API Wrapper.
+  #
+  # ```
+  # Kong.configure do |config|
+  #   config.backend = "http://localhost:8081/admin/api"
+  # end
+  # ```
+  def self.configure
+    yield configuration
+  end
 end
