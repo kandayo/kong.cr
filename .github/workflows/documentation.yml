@@ -1,0 +1,21 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: oprypin/install-crystal@v1
+        with:
+          crystal: latest
+      - run: shards install
+      - run: crystal docs --project-name "Kong"
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
