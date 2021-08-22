@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="Kong">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="Kong">
+  <title>Kong::Error::Type - Kong main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          Kong
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="Kong/Kong" data-name="kong">
+      <a href="../../Kong.html">Kong</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Kong/Kong/ApiError" data-name="kong::apierror">
+      <a href="../../Kong/ApiError.html">ApiError</a>
+      
+    </li>
+  
+  <li class=" " data-id="Kong/Kong/Client" data-name="kong::client">
+      <a href="../../Kong/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="Kong/Kong/Configuration" data-name="kong::configuration">
+      <a href="../../Kong/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="Kong/Kong/Consumer" data-name="kong::consumer">
+      <a href="../../Kong/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="Kong/Kong/Entities" data-name="kong::entities">
+      <a href="../../Kong/Entities.html">Entities</a>
+      
+        <ul>
+  
+  <li class=" " data-id="Kong/Kong/Entities/Consumer" data-name="kong::entities::consumer">
+      <a href="../../Kong/Entities/Consumer.html">Consumer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="Kong/Kong/Error" data-name="kong::error">
+      <a href="../../Kong/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="Kong/Kong/Error/Type" data-name="kong::error::type">
+      <a href="../../Kong/Error/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">enum</span> Kong::Error::Type
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L5" target="_blank">
+        kong/error.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="enum-members" class="anchor" href="#enum-members">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Enum Members
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="InvalidPrimaryKey">
+        <strong>InvalidPrimaryKey</strong> = <code><span class="n">1</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SchemaViolation">
+        <strong>SchemaViolation</strong> = <code><span class="n">2</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="PrimaryKeyViolation">
+        <strong>PrimaryKeyViolation</strong> = <code><span class="n">3</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ForeignKeyViolation">
+        <strong>ForeignKeyViolation</strong> = <code><span class="n">4</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="UniqueViolation">
+        <strong>UniqueViolation</strong> = <code><span class="n">5</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NotFound">
+        <strong>NotFound</strong> = <code><span class="n">6</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidOffset">
+        <strong>InvalidOffset</strong> = <code><span class="n">7</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DatabaseError">
+        <strong>DatabaseError</strong> = <code><span class="n">8</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidSize">
+        <strong>InvalidSize</strong> = <code><span class="n">9</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidUnique">
+        <strong>InvalidUnique</strong> = <code><span class="n">10</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidOptions">
+        <strong>InvalidOptions</strong> = <code><span class="n">11</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OperationUnsupported">
+        <strong>OperationUnsupported</strong> = <code><span class="n">12</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ForeignKeysUnresolved">
+        <strong>ForeignKeysUnresolved</strong> = <code><span class="n">13</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidDeclarativeConfiguration">
+        <strong>InvalidDeclarativeConfiguration</strong> = <code><span class="n">14</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TransformationError">
+        <strong>TransformationError</strong> = <code><span class="n">15</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidForeignKey">
+        <strong>InvalidForeignKey</strong> = <code><span class="n">16</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidWorkspace">
+        <strong>InvalidWorkspace</strong> = <code><span class="n">17</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="InvalidGlobalQuery">
+        <strong>InvalidGlobalQuery</strong> = <code><span class="n">18</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#database_error?-instance-method" class="signature"><strong>#database_error?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#foreign_key_violation?-instance-method" class="signature"><strong>#foreign_key_violation?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#foreign_keys_unresolved?-instance-method" class="signature"><strong>#foreign_keys_unresolved?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_declarative_configuration?-instance-method" class="signature"><strong>#invalid_declarative_configuration?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_foreign_key?-instance-method" class="signature"><strong>#invalid_foreign_key?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_global_query?-instance-method" class="signature"><strong>#invalid_global_query?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_offset?-instance-method" class="signature"><strong>#invalid_offset?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_options?-instance-method" class="signature"><strong>#invalid_options?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_primary_key?-instance-method" class="signature"><strong>#invalid_primary_key?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_size?-instance-method" class="signature"><strong>#invalid_size?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_unique?-instance-method" class="signature"><strong>#invalid_unique?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#invalid_workspace?-instance-method" class="signature"><strong>#invalid_workspace?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#not_found?-instance-method" class="signature"><strong>#not_found?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#operation_unsupported?-instance-method" class="signature"><strong>#operation_unsupported?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#primary_key_violation?-instance-method" class="signature"><strong>#primary_key_violation?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#schema_violation?-instance-method" class="signature"><strong>#schema_violation?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#transformation_error?-instance-method" class="signature"><strong>#transformation_error?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unique_violation?-instance-method" class="signature"><strong>#unique_violation?</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="database_error?-instance-method">
+      <div class="signature">
+        
+        def <strong>database_error?</strong>
+
+        <a class="method-permalink" href="#database_error?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="foreign_key_violation?-instance-method">
+      <div class="signature">
+        
+        def <strong>foreign_key_violation?</strong>
+
+        <a class="method-permalink" href="#foreign_key_violation?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="foreign_keys_unresolved?-instance-method">
+      <div class="signature">
+        
+        def <strong>foreign_keys_unresolved?</strong>
+
+        <a class="method-permalink" href="#foreign_keys_unresolved?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_declarative_configuration?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_declarative_configuration?</strong>
+
+        <a class="method-permalink" href="#invalid_declarative_configuration?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_foreign_key?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_foreign_key?</strong>
+
+        <a class="method-permalink" href="#invalid_foreign_key?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_global_query?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_global_query?</strong>
+
+        <a class="method-permalink" href="#invalid_global_query?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L23" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_offset?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_offset?</strong>
+
+        <a class="method-permalink" href="#invalid_offset?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_options?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_options?</strong>
+
+        <a class="method-permalink" href="#invalid_options?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_primary_key?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_primary_key?</strong>
+
+        <a class="method-permalink" href="#invalid_primary_key?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_size?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_size?</strong>
+
+        <a class="method-permalink" href="#invalid_size?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_unique?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_unique?</strong>
+
+        <a class="method-permalink" href="#invalid_unique?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="invalid_workspace?-instance-method">
+      <div class="signature">
+        
+        def <strong>invalid_workspace?</strong>
+
+        <a class="method-permalink" href="#invalid_workspace?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="not_found?-instance-method">
+      <div class="signature">
+        
+        def <strong>not_found?</strong>
+
+        <a class="method-permalink" href="#not_found?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="operation_unsupported?-instance-method">
+      <div class="signature">
+        
+        def <strong>operation_unsupported?</strong>
+
+        <a class="method-permalink" href="#operation_unsupported?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="primary_key_violation?-instance-method">
+      <div class="signature">
+        
+        def <strong>primary_key_violation?</strong>
+
+        <a class="method-permalink" href="#primary_key_violation?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="schema_violation?-instance-method">
+      <div class="signature">
+        
+        def <strong>schema_violation?</strong>
+
+        <a class="method-permalink" href="#schema_violation?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="transformation_error?-instance-method">
+      <div class="signature">
+        
+        def <strong>transformation_error?</strong>
+
+        <a class="method-permalink" href="#transformation_error?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unique_violation?-instance-method">
+      <div class="signature">
+        
+        def <strong>unique_violation?</strong>
+
+        <a class="method-permalink" href="#unique_violation?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/kong.cr/blob/fce97e5834a42fc446319d6aee73491626d8cf9f/src/kong/error.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
